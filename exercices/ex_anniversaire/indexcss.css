@@ -1,0 +1,58 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Comic Sans MS";
+    background-color: lightskyblue;
+}
+
+#content{
+    width: 1000px;
+    min-height: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+img.gauche{
+    position: absolute;
+}
+
+img.droite{
+    margin-left: 775px;
+    position: absolute;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: mediumseagreen;
+}
+
+h2{
+    cursor: pointer;
+    text-align: center;
+    border: black 3px solid;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+h3{
+    visibility: hidden;
+    text-align: center;
+    border: black 1.75px solid;
+    margin-right: 350px;
+    margin-left: 350px;
+    margin-top: 85px;
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}

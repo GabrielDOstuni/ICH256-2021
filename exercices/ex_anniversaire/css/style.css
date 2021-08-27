@@ -1,0 +1,21 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url("../img/img1.png");
+}
+h1, h2{
+    text-align: center;
+    color: aqua;
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 44px;
+}
+
+p{
+    font-size: ;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+
+    <!-- Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Script -->
+    <script src="../../jquery/jquery-3.6.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <!-- Title -->
+    <title>Diving Piscine</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+
+            <h1>Inscription</h1>
+
+        </div>
+            <div class="panel-body">
+                <form id="inscription_form" action="http://www.hirtzel.ch/pot/exemples/form/view/index.php" target="_blank" method="post">
+
+                    <!-- Nom -->
+                    <div class="form-group row">
+                        <label for="nom_inscription" class="col-sm-2 col-form-label">Nom :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nom_inscription" name="nom_inscription" placeholder="votre nom">
+                        </div>
+
+                    </div>
+
+                    <!-- Prenom -->
+                    <div class="form-group row">
+
+                        <label for="prenom_inscription" class="col-sm-2 col-form-label">Prénom :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="prenom_inscription" name="prenom_inscription" placeholder="votre prénom">
+                        </div>
+
+                    </div>
+
+                    <!-- Telephone -->
+                    <div class="form-group row">
+
+                        <label for="tel_inscription" class="col-sm-2 col-form-label">Téléphone :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="tel_inscription" name="tel_inscription" placeholder="votre téléphone">
+                        </div>
+
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group row">
+
+                        <label for="email_inscription" class="col-sm-2 col-form-label">E-mail</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="email_inscription" name="email_inscription" placeholder="votre e-mail">
+                        </div>
+
+                    </div>
+
+                    <!-- Moniteur -->
+                    <div class="form-group row">
+
+                        <label for="moniteur_inscription" class="col-sm-2 col-form-label">Moniteur :</label>
+                        <div class="col-sm-1">
+                            <input type="checkbox" id="moniteur_inscription" name="moniteur_inscription" class="checkbx">
+                        </div>
+                        <label for="eleve_inscription" class="col-sm-1 col-form-label moniteur">avec</label>
+                        <div class="col-sm-1">
+                            <select name="eleve_inscription" id="eleve_inscription" class="moniteur">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-1 col-form-label moniteur" id="eleve">élève(s)</label>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Activités :</label>
+
+                        <div class="col-sm-2">
+                            <input type="radio" id="plonge_inscription" name="activite_inscription"><b> Plongeurs</b></input>
+                        </div>
+
+                        <div class="col-sm-8">
+                            <input type="radio" id="nage_inscription" name="activite_inscription"><b> Nageurs - Apnéistes</b></input>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+
+                        <select for="club_inscription" id="club_inscription" class="col-sm-2 col-form-label selec_club">
+                            <option value="0">Séléctionner</option>
+                            <option value="octopus">Club Octopus</option>
+                            <option value="ADiving">Club About Diving</option>
+                            <option value="prive">Privé</option>
+                            <option value="autres">Autres(club - école)</option>
+                        </select>
+
+                        <label class="col-sm-1 col-form-label club"></label>
+                        <label for="clubnom_inscription" class="col-sm-1 col-form-label club">Nom :</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control club" id="clubnom_inscription" name="clubnom_inscription" placeholder="Le nom du club / école">
+                        </div>
+
+                        <label class="col-sm-3 col-form-label club"></label>
+                        <label for="clubtel_inscription" class="col-sm-1 col-form-label club">Tél. :</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control club" id="clubtel_inscription" name="clubtel_inscription" placeholder="Le numéro de téléphone du club / école">
+                        </div>
+
+                    </div>
+
+                    <!-- S'inscrire - Annuler -->
+                    <div class="form-group row">
+
+                        <div class="col-sm-10">
+                            <p></p>
+                        </div>
+                        <div class="col-sm-1">
+                            <button type="submit" class="btn btn-primary mb-5">S'inscrire</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

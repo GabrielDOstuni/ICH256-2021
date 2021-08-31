@@ -1,5 +1,15 @@
 $(function(){
 
+    $.validator.addMethod('PWCHECK',
+        function(value,element){
+            if (/^(?=.*?[A-Z]{1,})(?=(.*[a-z]){1,})(?=(.*[0-9]){1,})(?=(.*[$@$!%*?&]){1,}).{8,}$/.test(value)){
+                return true;
+            }else{
+                return false;
+            };
+        }
+    );
+
     $("#inscription_form").validate(
         {
             rules:{
@@ -17,7 +27,7 @@ $(function(){
                 },
                 mdp_per:{
                     required: true,
-                    minlength: 6
+                    PWCHECK: true
                 },
                 mdpc_per:{
                     required: true,
@@ -39,7 +49,7 @@ $(function(){
                 },
                 mdp_per:{
                     required: "Veuillez saisir votre mot de passe",
-                    minlength: "Votre mot de passe est trop court"
+                    PWCHECK: "Votre mot de passe ..."
                 },
                 mdpc_per:{
                     required: "Veuillez saisir une deuxième fois votre mot de passe",
